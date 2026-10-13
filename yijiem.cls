@@ -7,7 +7,7 @@
 
 \RequirePackage{titlesec}
 
-\usepackage[a4paper, portrait, margin=0.5in]{geometry}
+\usepackage[a4paper, portrait, margin=0.4in]{geometry}
 \usepackage{setspace}
 \singlespacing
 
