@@ -1,37 +1,38 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{yijiem}[2024/09/08 My custom CV class]
 
-\LoadClass{article}
+\LoadClass[10pt]{article}
 \setlength{\parindent}{0pt}
 \pagenumbering{gobble}
 
 \RequirePackage{titlesec}
 
-\usepackage[a4paper, portrait, margin=0.4in]{geometry}
+\usepackage[a4paper, portrait, hmargin=0.38in, vmargin=0.35in]{geometry}
+\usepackage{microtype}
 \usepackage{setspace}
 \singlespacing
 
 \titleformat{\section}         % Customise the \section command 
-  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
+  {\large\scshape\raggedright} % Make the \section headers large,
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
 
 \titleformat{\subsection}
-  {\large\scshape\raggedright}
+  {\normalsize\scshape\raggedright}
   {}{0em}
   {}
 
-\titlespacing*{\section}{0pt}{10pt}{5pt}
-\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\subsection}{0pt}{4pt}{1pt}
 
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{#1 \hfill #2}%
 }
 
 \newcommand{\name}[1]{%
-  \centerline{\Huge{#1}}
+  \centerline{\LARGE{#1}}
 }
 
 \newcommand{\contact}[4]{%
@@ -58,9 +59,9 @@
 
 \newcommand{\workitemstwo}[2]{%
     \begin{itemize}
-    \setlength{\topsep}{2pt}
+    \setlength{\topsep}{1pt}
     \setlength{\partopsep}{0pt}
-    \setlength{\itemsep}{1pt}
+    \setlength{\itemsep}{0.5pt}
     \setlength{\parskip}{0pt}
     \item #1
     \item #2
@@ -69,9 +70,9 @@
 
 \newcommand{\workitemsthree}[3]{%
     \begin{itemize}
-    \setlength{\topsep}{2pt}
+    \setlength{\topsep}{1pt}
     \setlength{\partopsep}{0pt}
-    \setlength{\itemsep}{1pt}
+    \setlength{\itemsep}{0.5pt}
     \setlength{\parskip}{0pt}
     \item #1
     \item #2
@@ -81,9 +82,9 @@
 
 \newcommand{\workitemsfour}[4]{%
     \begin{itemize}
-    \setlength{\topsep}{2pt}
+    \setlength{\topsep}{1pt}
     \setlength{\partopsep}{0pt}
-    \setlength{\itemsep}{1pt}
+    \setlength{\itemsep}{0.5pt}
     \setlength{\parskip}{0pt}
     \item #1
     \item #2

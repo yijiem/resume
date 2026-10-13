@@ -2,44 +2,44 @@
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
 \begin{document}
 
-\begin{spacing}{1.2}
+\begin{spacing}{1.1}
 \name{Yijie Ma}
 \end{spacing}
 \contact{605 E Evelyn Ave, Mountain View, CA 94041}{yijiem.main@gmail.com}{\href{https://github.com/yijiem}{github}}{650-695-9643}
 
 \section{Skills}
-    C/C++, Go, Python, Networking, Distributed Systems, Kubernetes, OpenTelemetry, Storage, Desktop App Development
+    C/C++, Go, Python, Distributed Systems, gRPC, API Gateway/L7 Proxy, AI Infrastructure (MCP, A2A, RDMA), \mbox{Kubernetes}, OpenTelemetry, Networking, Storage \& Filesystems, Desktop App Development (Linux/macOS/Windows)
 
 \section{Work Experience}
 \datedsubsection{Google}{April 2017 - Present}
     \textit{\small Software Engineer}
-    \begin{description}\setlength{\itemsep}{2pt}\setlength{\parskip}{0pt}
+    \begin{description}\setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}
     \projectitem{Google Cloud API Gateway \& Service Infrastructure}{\workitemsfour
-        {Architected C++ OpenTelemetry distributed tracing across HTTP and gRPC for Cloud, GenAI, and MCP APIs.}
-        {Led Agent-to-Agent (A2A) observability and W3C Trace Context propagation, mentoring junior engineers.}
-        {Spearheaded a decoupled API configuration rollout pipeline with dual-stack routing for zero-downtime delivery.}
-        {Automated release risk analysis and staging promotions via LLM multi-agent workflows, cutting hours of manual toil.}}
+        {Architected C++ OpenTelemetry distributed tracing and W3C Trace Context propagation across HTTP and gRPC for Cloud, GenAI, Model Context Protocol (MCP), and Agent-to-Agent (A2A) APIs.}
+        {Led delivery of the Express Stack---a fast-track API serving tier decoupling rapid AI/Cloud feature releases from the 99.999\%-SLO core gateway---architecting C++ dual-identity config resolution for zero-friction onboarding.}
+        {Pioneered multi-agent workflows for release automation using reusable AI Skills to evaluate 200+ code changes across a 7-dimension risk rubric, generate release reports, and automate staging promotions.}
+        {Mentored junior engineers via 1:1 architecture walkthroughs, milestone scoping, and code reviews to deliver Agent-to-Agent (A2A) telemetry and end-to-end prober suites.}}
     \projectitem{Google Kubernetes Engine (GKE) Networking}{\workitemstwo
-        {Engineered GKE control-plane automation in Go to auto-provision multi-NIC \href{https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom\#create-cluster}{RDMA network topologies} for AI clusters.}
-        {Designed concurrent provisioning pipelines and validated multi-node GPUDirect-RDMA on NVIDIA H200 with NCCL.}}
+        {Engineered GKE control-plane automation in Go to auto-provision multi-NIC \href{https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom\#create-cluster}{RDMA network topologies} (VPCs, subnets, IP ranges) for AI-optimized GPU clusters.}
+        {Designed concurrent resource provisioning pipelines and validated multi-node GPUDirect-RDMA performance on NVIDIA H200 GPU clusters using NVIDIA's NCCL test suite.}}
     \projectitem{gRPC Open Source Remote Procedure Call Framework}{\workitemsfour
-        {Core developer and \href{https://github.com/grpc/grpc/blob/master/MAINTAINERS.md}{Maintainer} (150+ PRs, 40K+ stars); architected the cross-platform EventEngine \href{https://github.com/grpc/grpc/blob/master/src/core/lib/event_engine/ares_resolver.h}{DNS resolver}.}
-        {Designed and built the C++ template \href{https://github.com/grpc/grpc/blob/master/src/core/telemetry/metrics.h}{Metrics framework} and \href{https://github.com/grpc/grpc/blob/master/src/cpp/ext/otel/otel_plugin.h}{OpenTelemetry plugin}, cutting counter latency by 10\%.}
-        {Co-authored \href{https://github.com/grpc/proposal/blob/master/A79-non-per-call-metrics-architecture.md}{gRFC A79: Non-per-call Metrics Architecture} to standardize telemetry collection across gRPC core.}
-        {Resolved critical concurrency bugs, security vulnerabilities, and performance bottlenecks for millions of OSS users.}}
+        {Core developer and \href{https://github.com/grpc/grpc/blob/master/MAINTAINERS.md}{Maintainer} of \href{https://github.com/grpc/grpc}{gRPC} (40K+ GitHub stars) with 150+ authored PRs across C++ core, networking, and observability.}
+        {Designed and built the cross-platform EventEngine asynchronous \href{https://github.com/grpc/grpc/blob/master/src/core/lib/event_engine/ares_resolver.h}{DNS resolver} across Linux/POSIX and Windows.}
+        {Co-authored \href{https://github.com/grpc/proposal/blob/master/A79-non-per-call-metrics-architecture.md}{gRFC A79}; designed and built the high-performance \href{https://github.com/grpc/grpc/blob/master/src/core/telemetry/metrics.h}{Metrics framework} with C++ template technique and the \href{https://github.com/grpc/grpc/blob/master/src/cpp/ext/otel/otel_plugin.h}{OpenTelemetry plugin}.}
+        {Designed the POSIX \texttt{fork()} handler system and resolved critical concurrency deadlocks, security issues, and performance bottlenecks for millions of users.}}
     \projectitem{Google Drive Desktop Application}{\workitemsfour
-        {Engineered rsync-style differential upload and Gzip compression pipelines to cut upload bandwidth for millions of users.}
-        {Developed the USB device backup stack processing millions of files daily and optimized I/O buffering for a 10x speedup.}
-        {Designed and launched the cross-platform Preferences framework for user and enterprise admin policy configuration.}
-        {Delivered 100+ crash fixes, memory optimizations, and reliability improvements across Windows, macOS, and Linux.}}
+        {Built rsync-style differential upload and Gzip stream compression encoders with compressibility heuristics to save upload bandwidth for millions of users.}
+        {Built the USB device backup subsystem backing up millions of files daily and increased backup speed by 10x (140s to 18s for 1GiB) by optimizing I/O buffers.}
+        {Built the cross-platform Preferences module with user-level and admin-level overrides, and refactored macOS/Windows UI controllers to delete 4,000+ lines of C++ code.}
+        {Added Linux Crashpad and Windows heap-stack crash reporting (capturing 1,000+ daily crashes), mitigated a live outage for 10,000+ users, and delivered 100+ bug fixes.}}
     \projectitem{Stadia Cloud Gaming Service}{\workitemsthree
-        {Accelerated game container click-to-play startup by 75\% (1.58s to 396ms) by profiling and eliminating VM bottlenecks.}
-        {Developed a Linux Cgroup management library to isolate and configure container resources during VM provisioning.}
-        {Engineered a custom Windows shell replacing \texttt{explorer.exe} for gamer surface lockdown and process lifecycle control.}}
+        {Built a Linux Cgroup library for setting up container resource configurations on cloud gaming VMs.}
+        {Increased game click-to-play launch speed by 75\% (1.58s to 396ms) via CPU profiling and container setup optimization.}
+        {Built a custom Windows shell to replace \texttt{explorer.exe} with AppLocker lockdown and multi-process game lifecycle management.}}
     \end{description}
 \datedsubsection{NetApp}{August 2015 - March 2017}
     \textit{\small Member of Technical Staff}
-    \begin{spacing}{1.2}
+    \begin{spacing}{1.1}
     Worked on the \href{https://www.netapp.com/media/19930-ds-3651.pdf}{AltaVault} Cloud-Integrated Storage device. Built a filesystem software and used RocksDB for cataloging
     \end{spacing}
     users' snapshot data. Built full or incremental backup and restore functionalities.
