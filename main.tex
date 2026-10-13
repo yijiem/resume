@@ -16,26 +16,26 @@
     \begin{description}\setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}
     \projectitem{Google Cloud API Gateway \& Service Infrastructure}{\workitemsfour
         {Architected C++ OpenTelemetry distributed tracing and W3C Trace Context propagation across HTTP and gRPC for Cloud, GenAI, Model Context Protocol (MCP), and Agent-to-Agent (A2A) APIs.}
-        {Led delivery of the Express Stack, an isolated fast-track API serving tier that decouples rapid AI and Cloud feature releases from the 99.999\%-SLO core gateway.}
+        {Led delivery of the Express Stack, an isolated fast-track API serving tier that decouples rapid AI and Cloud feature rollouts from the slower stable release track.}
         {Pioneered LLM multi-agent workflows using reusable AI Skills to automate release risk assessment, qualification reporting, and staging promotions.}
         {Mentored junior engineers via 1:1 architecture walkthroughs, milestone scoping, and code reviews to deliver Agent-to-Agent (A2A) telemetry and end-to-end prober suites.}}
     \projectitem{Google Kubernetes Engine (GKE) Networking}{\workitemstwo
         {Engineered GKE control-plane automation in Go to auto-provision multi-NIC \href{https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom\#create-cluster}{RDMA network topologies} (VPCs, subnets, IP ranges) for AI-optimized GPU clusters.}
-        {Designed concurrent resource provisioning pipelines and validated multi-node GPUDirect-RDMA performance on NVIDIA H200 GPU clusters using NVIDIA's NCCL test suite.}}
+        {Designed concurrent request handling with distributed transactions and validated multi-node GPU communication using NVIDIA's NCCL test suite.}}
     \projectitem{gRPC Open Source Remote Procedure Call Framework}{\workitemsfour
         {Core developer and \href{https://github.com/grpc/grpc/blob/master/MAINTAINERS.md}{Maintainer} of \href{https://github.com/grpc/grpc}{gRPC} (40K+ GitHub stars) with 150+ authored PRs across C++ core, networking, and observability.}
         {Designed and built the cross-platform EventEngine asynchronous \href{https://github.com/grpc/grpc/blob/master/src/core/lib/event_engine/ares_resolver.h}{DNS resolver} across Linux/POSIX and Windows.}
         {Co-authored \href{https://github.com/grpc/proposal/blob/master/A79-non-per-call-metrics-architecture.md}{gRFC A79}; designed and built the high-performance \href{https://github.com/grpc/grpc/blob/master/src/core/telemetry/metrics.h}{Metrics framework} with C++ template technique and the \href{https://github.com/grpc/grpc/blob/master/src/cpp/ext/otel/otel_plugin.h}{OpenTelemetry plugin}.}
-        {Designed the POSIX \texttt{fork()} syscall handling system (\texttt{ObjectGroupForkHandler}) and resolved pre-fork deadlocks across gRPC C++ and Python.}}
+        {Designed the POSIX fork syscall handling system and resolved pre-fork deadlocks across gRPC C++ and Python.}}
     \projectitem{Google Drive Desktop Application}{\workitemsfour
         {Built rsync-style differential upload and Gzip stream compression encoders with compressibility heuristics to save upload bandwidth for millions of users.}
         {Built the USB device backup subsystem backing up millions of files daily and increased backup speed by 10x (140s to 18s for 1GiB) by optimizing I/O buffers.}
-        {Built the cross-platform Preferences module with user-level and admin-level overrides, and refactored macOS/Windows UI controllers to delete 4,000+ lines of C++ code.}
+        {Built the cross-platform Preferences system supporting user-level settings and enterprise admin policy overrides across macOS and Windows.}
         {Added Crashpad crash reporting on Linux, built a post-mortem crash debugging tool, and fixed Windows crash reporting for threads on heap-allocated stacks.}}
     \projectitem{Stadia Cloud Gaming Service}{\workitemsthree
         {Built a Linux Cgroup library for setting up container resource configurations on cloud gaming VMs.}
         {Increased game click-to-play launch speed by 75\% (1.58s to 396ms) via CPU profiling and container setup optimization.}
-        {Built a custom Windows shell to replace \texttt{explorer.exe} with AppLocker lockdown and multi-process game lifecycle management.}}
+        {Built a custom Windows shell to replace explorer.exe with AppLocker lockdown and multi-process game lifecycle management.}}
     \end{description}
 \datedsubsection{NetApp}{August 2015 - March 2017}
     \textit{\small Member of Technical Staff}
