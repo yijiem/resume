@@ -23,6 +23,9 @@
   {}{0em}
   {}
 
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\titlespacing*{\subsection}{0pt}{8pt}{3pt}
+
 \newcommand{\datedsubsection}[2]{%
   \subsection[#1]{#1 \hfill #2}%
 }
@@ -41,6 +44,10 @@
 
 \setlength{\leftmargini}{0pt} % Remove indentation for the first-level itemize list
 
+\newcommand{\projectitem}[2]{%
+    \item \textbf{#1} #2
+}
+
 \newcommand{\projectitemsthree}[6]{%
     \begin{description}
     \item \textbf{#1} #2
@@ -49,8 +56,23 @@
     \end{description}
 }
 
+\newcommand{\workitemstwo}[2]{%
+    \begin{itemize}
+    \setlength{\topsep}{2pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
+    \item #1
+    \item #2
+    \end{itemize}
+}
+
 \newcommand{\workitemsthree}[3]{%
     \begin{itemize}
+    \setlength{\topsep}{2pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
     \item #1
     \item #2
     \item #3
@@ -59,6 +81,10 @@
 
 \newcommand{\workitemsfour}[4]{%
     \begin{itemize}
+    \setlength{\topsep}{2pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{1pt}
+    \setlength{\parskip}{0pt}
     \item #1
     \item #2
     \item #3
