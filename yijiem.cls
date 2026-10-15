@@ -92,3 +92,17 @@
     \item #4
     \end{itemize}
 }
+
+\newcommand{\workitemsfive}[5]{%
+    \begin{itemize}
+    \setlength{\topsep}{1pt}
+    \setlength{\partopsep}{0pt}
+    \setlength{\itemsep}{0.5pt}
+    \setlength{\parskip}{0pt}
+    \item #1
+    \item #2
+    \item #3
+    \item #4
+    \item #5
+    \end{itemize}
+}

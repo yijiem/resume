@@ -1,0 +1,55 @@
+\documentclass{yijiem}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+\begin{document}
+
+\begin{spacing}{1.1}
+\name{Yijie Ma}
+\end{spacing}
+\contact{605 E Evelyn Ave, Mountain View, CA 94041}{yijiem.main@gmail.com}{\href{https://github.com/yijiem}{github}}{650-695-9643}
+
+\section{Skills}
+    C/C++, Go, Python, OpenTelemetry (OTLP, Semantic Conventions, W3C Trace Context), Distributed Systems, gRPC, AI \& Agentic Observability (GenAI, MCP, A2A), \mbox{Kubernetes}, API Gateway/L7 Proxy, Networking, Storage \& Filesystems, Desktop App Development (Linux/macOS/Windows)
+
+\section{Work Experience}
+\datedsubsection{Google}{April 2017 - Present}
+    \textit{\small Software Engineer}
+    \begin{description}\setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}
+    \projectitem{Google Cloud API Gateway \& Service Infrastructure}{\workitemsfive
+        {Designed API Gateway's distributed tracing architecture across HTTP and gRPC requests, defined and implemented tracing data model based on OTel SemConv for Cloud, GenAI, \href{https://docs.cloud.google.com/mcp/monitor-mcp-tool-use-with-cloud-trace}{Model Context Protocol (MCP)}, and Agent-to-Agent (A2A) requests.}
+        {Built end-to-end W3C Trace Context propagation, trace span generation, trace context initiation and sampling, and asynchronous OTLP trace/log export pipelines for API Gateway handling millions of QPS.}
+        {Led delivery of an isolated fast API serving release track that decouples rapid AI and Cloud feature rollouts from the slower stable release track.}
+        {Pioneered reusable AI Skills to automate the release process, adopted by other team members.}
+        {Mentored junior engineers via 1:1 architecture walkthroughs, milestone scoping, and code reviews to deliver multi-quarter observability projects.}}
+    \projectitem{gRPC Open Source Remote Procedure Call Framework}{\workitemsfour
+        {Core developer and \href{https://github.com/grpc/grpc/blob/master/MAINTAINERS.md}{Maintainer} of \href{https://github.com/grpc/grpc}{gRPC} (40K+ GitHub stars) with 150+ authored PRs, driving open-source RFCs and PR reviews across C++ core, networking, and observability.}
+        {Co-authored \href{https://github.com/grpc/proposal/blob/master/A79-non-per-call-metrics-architecture.md}{gRFC A79} to standardize non-per-call telemetry; architected the C++ templatized \href{https://github.com/grpc/grpc/pull/36449}{Metrics framework} and \href{https://github.com/grpc/grpc/pull/36070}{OpenTelemetry plugin}, \href{https://github.com/grpc/grpc/pull/37311}{cutting Counter overhead by 10\%}.}
+        {Designed and built the cross-platform EventEngine asynchronous \href{https://github.com/grpc/grpc/pull/32701}{DNS resolver} across Linux/POSIX and Windows.}
+        {Designed the POSIX fork syscall handling system and resolved pre-fork deadlocks across gRPC C++ and Python.}}
+    \projectitem{Google Kubernetes Engine (GKE) Networking}{\workitemstwo
+        {Engineered GKE control-plane automation in Go to auto-provision multi-NIC \href{https://cloud.google.com/ai-hypercomputer/docs/create/gke-ai-hypercompute-custom\#create-cluster}{RDMA network topologies} for AI-optimized GPU clusters.}
+        {Designed concurrent request handling with distributed transactions and validated multi-node GPU communication using NVIDIA's NCCL test suite.}}
+    \projectitem{Google Drive Desktop Application}{\workitemsfour
+        {Designed and built the \href{https://workspaceupdates.googleblog.com/2025/01/release-notes-01-10-2025.html}{rsync-style differential upload} feature to save upload bandwidth for millions of users.}
+        {Architected the \href{https://blog.google/products-and-platforms/products/workspace/drive-for-desktop/}{USB device backup subsystem} backing up millions of files daily, increasing backup speed 10x by optimizing I/O read buffers.}
+        {Designed the \href{https://knowledge.workspace.google.com/admin/drive/advanced-drive-for-desktop-configuration}{cross-platform Preferences system} for user and admin-level app configurations.}
+        {Discovered a new category of crashes in threads running on heap-allocated stacks on Windows.}}
+    \projectitem{Stadia Cloud Gaming Service}{\workitemstwo
+        {Designed a Linux Cgroup library for setting up container resource configurations on cloud gaming VMs.}
+        {Increased game click-to-play launch speed by 75\% (1.58s to 396ms) via CPU profiling and container setup optimization.}}
+    \end{description}
+\datedsubsection{NetApp}{August 2015 - March 2017}
+    \textit{\small Member of Technical Staff}\par\vspace{1pt}
+    Worked on the \href{https://www.netapp.com/media/19930-ds-3651.pdf}{AltaVault} Cloud-Integrated Storage device. Designed and built a filesystem software to backup user's files to multi-cloud vendors. Designed and implemented full and incremental snapshot backup and restore functions using RocksDB.
+
+\section{Education}
+\datedsubsection{Carnegie Mellon University}{Sep 2013 - May 2015}
+    \begin{spacing}{0.7}
+    \textit{\small Master of Science in Electrical and Computer Engineering}\newline
+    \end{spacing}
+    \textbf{Coursework:} Introduction to Computer System, Embedded Realtime System, Advanced Storage System, Internet Service, Cloud Computing, Distributed System
+\datedsubsection{Donghua University}{Sep 2009 - May 2013}
+    \begin{spacing}{0.7}
+    \textit{\small Bachelor of Engineering in Electrical Engineering and Automation}\newline
+    \end{spacing}
+    \textbf{Awards:} 2012 IEEE-standard Micromouse competition national award issued by China Computer Federation (CCF)
+\end{document}
