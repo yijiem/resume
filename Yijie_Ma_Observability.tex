@@ -15,11 +15,11 @@
     \textit{\small Software Engineer}
     \begin{description}\setlength{\topsep}{2pt}\setlength{\partopsep}{0pt}\setlength{\itemsep}{1.5pt}\setlength{\parskip}{0pt}
     \projectitem{Google Cloud API Gateway \& Service Infrastructure}{\workitemsfive
-        {Designed API Gateway's distributed tracing architecture across HTTP and gRPC requests, defined and implemented tracing data model based on OTel SemConv for Cloud, GenAI, \href{https://docs.cloud.google.com/mcp/monitor-mcp-tool-use-with-cloud-trace}{Model Context Protocol (MCP)}, and Agent-to-Agent (A2A) requests.}
+        {Led technical direction and architecture for API Gateway's distributed tracing across HTTP and gRPC requests, defining the OTel SemConv tracing data model for Cloud, GenAI, \href{https://docs.cloud.google.com/mcp/monitor-mcp-tool-use-with-cloud-trace}{Model Context Protocol (MCP)}, and Agent-to-Agent (A2A) requests.}
+        {Drove cross-org alignment across Auth, Observability, and API Gateway teams to resolve ambiguous agentic requirements; scoped milestones and mentored junior engineers on multi-quarter observability projects.}
         {Built end-to-end W3C Trace Context propagation, trace span generation, trace context initiation and sampling, and asynchronous OTLP trace/log export pipelines for API Gateway handling millions of QPS.}
-        {Led delivery of an isolated fast API serving release track that decouples rapid AI and Cloud feature rollouts from the slower stable release track.}
-        {Pioneered reusable AI Skills to automate the release process, adopted by other team members.}
-        {Mentored junior engineers via 1:1 architecture walkthroughs, milestone scoping, and code reviews to deliver multi-quarter observability projects.}}
+        {Scoped and led multi-quarter delivery of an isolated fast API serving release track across control-plane and serving teams, decoupling rapid AI and Cloud feature rollouts from the slower stable release track.}
+        {Pioneered reusable AI Skills to automate the release process, adopted by other team members.}}
     \projectitem{gRPC Open Source Remote Procedure Call Framework}{\workitemsfour
         {Core developer and \href{https://github.com/grpc/grpc/blob/master/MAINTAINERS.md}{Maintainer} of \href{https://github.com/grpc/grpc}{gRPC} (40K+ GitHub stars) with 150+ authored PRs, driving open-source RFCs and PR reviews across C++ core, networking, and observability.}
         {Co-authored \href{https://github.com/grpc/proposal/blob/master/A79-non-per-call-metrics-architecture.md}{gRFC A79} to standardize non-per-call telemetry; architected the C++ templatized \href{https://github.com/grpc/grpc/pull/36449}{Metrics framework} and \href{https://github.com/grpc/grpc/pull/36070}{OpenTelemetry plugin}, \href{https://github.com/grpc/grpc/pull/37311}{cutting Counter overhead by 10\%}.}
@@ -32,7 +32,7 @@
         {Designed and built the \href{https://workspaceupdates.googleblog.com/2025/01/release-notes-01-10-2025.html}{rsync-style differential upload} feature to save upload bandwidth for millions of users.}
         {Architected the \href{https://blog.google/products-and-platforms/products/workspace/drive-for-desktop/}{USB device backup subsystem} backing up millions of files daily, increasing backup speed 10x by optimizing I/O read buffers.}
         {Designed the \href{https://knowledge.workspace.google.com/admin/drive/advanced-drive-for-desktop-configuration}{cross-platform Preferences system} for user and admin-level app configurations.}
-        {Discovered a new category of crashes in threads running on heap-allocated stacks on Windows.}}
+        {Discovered a new category of crashes (1000+ daily) in threads running on heap-allocated stacks on Windows.}}
     \projectitem{Stadia Cloud Gaming Service}{\workitemstwo
         {Designed a Linux Cgroup library for setting up container resource configurations on cloud gaming VMs.}
         {Increased game click-to-play launch speed by 75\% (1.58s to 396ms) via CPU profiling and container setup optimization.}}
